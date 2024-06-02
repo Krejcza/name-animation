@@ -1,0 +1,91 @@
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+   background: #21315f;
+}
+
+#logo{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   animation: filler 0.5s ease forwards 4s;
+}
+
+#logo path:nth-child(1){
+   stroke-dasharray: 284.19px;
+   stroke-dashoffset: 284.19px;
+   animation: line-animation 2s ease forwards;
+}
+#logo path:nth-child(2){
+   stroke-dasharray: 497.81px;
+   stroke-dashoffset: 497.81px;
+   animation: line-animation 2s ease forwards 0.2s; 
+}
+#logo path:nth-child(3){
+   stroke-dasharray: 333.06px;
+   stroke-dashoffset: 333.06px;
+   animation: line-animation 2s ease forwards 0.4s; 
+}
+#logo path:nth-child(4){
+   stroke-dasharray: 457.28px;
+   stroke-dashoffset: 457.28px;
+   animation: line-animation 2s ease forwards 0.6s;
+}
+#logo path:nth-child(5){
+   stroke-dasharray: 231.7px;
+   stroke-dashoffset: 231.7px;
+   animation: line-animation 2s ease forwards 0.8s;
+}
+#logo path:nth-child(6){
+   stroke-dasharray: 471.84px;
+   stroke-dashoffset: 471.84px;
+   animation: line-animation 2s ease forwards 1s;
+}
+#logo path:nth-child(7){
+   stroke-dasharray: 516.89px;
+   stroke-dashoffset: 516.89px;
+   animation: line-animation 2s ease forwards 1.2s;
+}
+#logo path:nth-child(8){
+   stroke-dasharray: 537.23px;
+   stroke-dashoffset: 537.23px;
+   animation: line-animation 2s ease forwards 1.4s;
+}
+#logo path:nth-child(9){
+   stroke-dasharray: 432.31px;
+   stroke-dashoffset: 432.31px;
+   animation: line-animation 2s ease forwards 1.6s;
+}
+#logo path:nth-child(10){
+   stroke-dasharray: 389.84px;
+   stroke-dashoffset: 389.84px;
+   animation: line-animation 2s ease forwards 1.8s;
+}
+#logo path:nth-child(11){
+   stroke-dasharray: 287.19px;
+   stroke-dashoffset: 287.19px;
+   animation: line-animation 2s ease forwards 2.0s;
+}
+
+@keyframes line-animation {
+   to{
+      stroke-dashoffset: 0;
+   }
+}
+
+@keyframes filler {
+   from{
+      fill:transparent;
+   }
+
+   to{
+      fill:#fff;
+   }
+}
